@@ -1,0 +1,26 @@
+CDZ, HBM, HEW, HXT, IAG, PZA, RY, SII, SU, TD, U, XIU, X, ZEB
+
+#Block Trade
+XIU, HXT, HXT.U, HEW
+
+XIU is so liquid that it has its own unique trading profile and is saturated with a wide variety of automated trading strategies by different market participants, so I doubt you'll find too many interesting anomalies there.  
+
+I would run it on 4 categories below, and see which category produces the most interesting results. 
+1) a liquid corporate symbol, like SU, TRD or the Cdn bank stocks (e.g. RY, CM, TD, BMO, BNS) 
+2) a medium liquidity ETF, definitely not XIU due the reason described above, like CDZ, ZEB, HSU/HSDn
+3) a medium liquidity corporate symbol, like X, HBM, IAG, BTO
+4) a low liquidity symbol, but not too low in liquidity, since I'm assuming you still need enough data points, like SII, PZA, U
+
+
+#Non-block trade 
+Yes, all non-block trades would be equally as interesting.  The reason to look at non-block vs block (and not in combination) is they are handled in vastly different ways so interpreting results of a combined basis would be blurry.  For this, I would ensure you exclude debentures (represented by .DB in suffix), preferred shares (represented by .PR in the suffix) and warrants, rights from these as they simply muddy the results.  (.WT, .RT)  Best to only focus on root symbols (e.g. the primary ticker) 
+
+
+
+Block Trade anomaly database
+For block trades, I would look to identify anomalies in the count of and size of block trades across each symbol throughout our history.  This would show when there are spikes in institutional investor activity and ideally would represent if the anomaly is occurring on the buy or sell side, aka moving in/out of the stock.  
+
+Note that our history in Grapevine is limited to the following: 
+Canada - since Jan 2017
+US - since March 1, 2019
+US - since March 1, 2019  
