@@ -1,4 +1,4 @@
-# TMX_SARIMA
+# SARIMA
 
 datadownload.py - Code for downloading the price data 
 
