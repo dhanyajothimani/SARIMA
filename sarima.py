@@ -74,7 +74,7 @@ def pre_process(time_series_df):
             obs = test_log[index]
             history.append(obs)
             #print(len(history))
-        except(RuntimeError, TypeError, NameError, ValueError, ZeroDivisionError, LinAlgError):
+        except(RuntimeError, TypeError, NameError, ValueError, ZeroDivisionError, np.linalg.LinAlgError):
             pass
 
     predicted_df=pd.DataFrame()
